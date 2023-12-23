@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="main-left-side">
+        <!-- Sketch that changes -->
+        <img
+          src="images/standing_point.svg"
+          alt="Sketch of a standing person"
+          class="default_standing_point"
+        />
+        <img
+          src="images/default_sketch.svg"
+          alt="Standing point"
+          class="default-sketch"
+          id="current_cloth"
+        />
+      </section>
+      <section>
+        <div class="main-right-side">
+          <table>
+            <tr>
+              <th
+                id="bodyTitle"
+                onclick="toggleVisibility('main-right-side-body')"
+              >
+                Body
+              </th>
+              <th
+                id="skinTitle"
+                onclick="toggleVisibility('main-right-side-skin')"
+              >
+                Skin
+              </th>
+              <th>Hair</th>
+              <th>Top</th>
+              <th>Bottom</th>
+              <th>Shoes</th>
+            </tr>
+            <tr>
+              <td></td>
+            </tr>
+          </table>
+          <div class="main-right-side-body" id="main-right-side-body">
+            <img
+              src="images/default_sketch.svg"
+              id="cloth_2"
+              onclick="changeSketches('cloth_2')"
+              class="sketch_images"
+            />
+            <img
+              src="images/sketch-2.svg"
+              id="cloth_1"
+              onclick="changeSketches('cloth_1')"
+              class="sketch_images"
+            />
+          </div>
+          <div
+            class="main-right-side-skin"
+            id="main-right-side-skin"
+            style="display: none"
+          >
+            <!-- Add skin content here -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

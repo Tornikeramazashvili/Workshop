@@ -1,0 +1,87 @@
+@font-face {
+  src: url("fonts/Caveat-Medium.ttf");
+  font-family: Caveat-Medium;
+  font-weight: normal;
+  font-style: normal;
+}
+/* Lines of code that you need almost in every css file */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: Caveat-Medium;
+}
+
+/*  */
+
+body {
+  background-image: url("images/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+/* Left side */
+
+.default_standing_point {
+  position: absolute;
+  bottom: 0rem;
+  left: 22%;
+
+  transform: translateX(-50%);
+  max-width: 400px;
+  width: 100%;
+}
+
+.default-sketch {
+  position: absolute;
+  bottom: 9rem;
+  left: 21%;
+
+  transform: translateX(-50%);
+  max-width: 250px;
+  width: 100%;
+}
+
+/* Right side */
+
+.main-right-side {
+  position: absolute;
+  bottom: 4rem;
+  left: 50%;
+
+  max-width: 580px;
+  max-height: 580px;
+  height: 100%;
+  width: 100%;
+}
+
+.sketch_images {
+  width: 100px;
+  cursor: pointer;
+}
+
+.main-right-side-body {
+  position: absolute;
+  bottom: 20rem;
+  left: 6%;
+}
+
+table,
+th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 2px 20px;
+  font-size: 26px;
+}
+
+td {
+  padding: 240px 0px;
+}
+
+th {
+  cursor: pointer;
+}
